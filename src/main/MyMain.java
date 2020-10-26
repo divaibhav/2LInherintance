@@ -6,14 +6,16 @@
  */
 package main;
 
+import base.Person;
 import derived.Employee;
 import derived.Student;
 
 public class MyMain {
     public static void main(String[] args) {
-        Student obj = new Student("vaibhav", "diva", 11, "BE",4, 7);
-        obj.display();
-        Employee emp = new Employee();
-        emp.display();
+        Person p = new Student("vaibhav", "diva", 11, "BE",4, 7);
+        Person p1= new Employee(123,45678);
+        p.display();
+        p1.display();
+
     }
 }

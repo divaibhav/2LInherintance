@@ -12,6 +12,12 @@ public class Employee extends Person {
     private int empId;
     private long salary;
 
+    public Employee(int empId, long salary) {
+        //java will supply a call to default constructor or the no-argument constructor
+        this.empId = empId;
+        this.salary = salary;
+    }
+
     public int getEmpId() {
         return empId;
     }
